@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS Linking -->
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+
+    <!-- Favicon Section -->
+    <link rel="icon" href="{{url_for('static',filename='space.webp')}}" type="image/jpg">
+
+    <!-- Boxicons Icons -->
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+    
+
+    <title>Space Spheres 🚀🛰️</title>
+
+</head>
+<body>
+<!-- Customize Mouse Cursor -->
+    <style>
+body {
+    cursor: url("{{ url_for('static', filename='sky.png') }}"), auto;
+}
+</style>
+    <!-- Navbar Section -->
+
+    <nav class="navbar" >
+        <div class="space">
+            <img class="space-sphere" src="{{url_for('static',filename='space.webp')}}" alt="logo image">
+        <span>Space Spheres 🛰️</span>
+        </div>
+        
+        <ul id="menulink">
+            <li><a href="#hero-section">🏠 Home</a></li>
+<li><a href="#celestial-section">🛰️ Celestial Bodies</a></li>
+<li><a href="#solar-section">🪐 Solar System</a></li>
+<li><a href="#distance-section">📏 Distance</a></li>
+<li><a href="#contact-section">📡 Contact</a></li>
+<li><a href="#map-section">🗺️ Location Map</a></li>
+
+        </ul>
+        <div class="menu-icon">
+            <i class='bxr  bx-menu' id="menubar"  ></i>
+        </div>
+        
+        
+         
+    </nav>
+
+    <!-- Home Section -->
+    <div class="home-section" id="hero-section">
+        <video src="{{url_for('static',filename='stars.mp4')}}" autoplay muted loop></video>
+        <div class="left">
+            <h1>⭐ Space Spheres 🪐</h1>
+<h1>✨Discover the Unknown 🌙</h1>
+<h1>🚀Explore Beyond the Stars 🛰️</h1>
+
+<p class="cosmic">Step Into the Cosmic Universe! 🌍🚀 Space isn’t just distance — it’s a vast frontier where curiosity expands endlessly 🌌✨. Every star shines with mystery ⭐, light 🌠, and discovery 🔭, revealing ancient stories scattered across endless galaxies 💫. It sparks imagination 💡, fuels exploration 🪐, and invites travelers to witness wonders that reshape our understanding forever 🌟. From drifting planets 🪐 to glowing nebulae 🌌, space inspires awe, dreams, and infinite fascination ❤️.</p>
+
+
+            <a href="" class="btn">🚀 Explore Space</a>
+        </div>
+    
+        
+
+    </div>
+    <div class="line">
+  <marquee behavior="scroll" direction="right">
+    Space Spheres 🌌✨ Space Spheres 🚀🌟 Space Spheres 🪐💫 Space Spheres 🌠🛰️ 
+    Space Spheres 🌌🚀 Space Spheres 🌙⭐ Space Spheres ☄️🪐 Space Spheres 🌍🌟 
+    Space Spheres 🌑🚀 Space Spheres 🌌🛸
+  </marquee>
+</div>
+
+    
+    <!--Celestial Section -->
+    
+    <section id="celestial-section">
+        <h2 class="autoShow show">🛰️ Celestial Bodies</h2>
+        <div class="celestial-container">
+            
+            
+            <div class="celestial-items autoShow">
+                <img src="{{url_for('static',filename='milkyway.webp')}}" alt="milky way">
+                <h4>The Milky Way Galaxy</h4>
+                <a href="https://youtu.be/wkr3y066K6Y?si=ZE6eclOohs-vVVNp" target="_blank"><div class="btn">Explore Now 🛰️</div></a>
+
+            </div>
+
+            <div class="celestial-items autoShow">
+                <img src="{{url_for('static',filename='sun.webp')}}" alt="The Sun">
+                <h4>The Sun</h4>
+                <a href="https://youtu.be/SLmWY_ycFUA?si=6thqUJyJD_XSUbqY" target="_blank" ><div class="btn">Explore Now 🛰️</div></a>
+
+            </div>
+
+            <div class="celestial-items autoShow">
+                <img src="{{url_for('static',filename='quasar.webp')}}" alt="quasar pic">
+                <h4>The Quasar</h4>
+                <a href="https://youtu.be/V4Z8EdiJxgk?si=53d2gaDS82uuX1eV" target="_blank"><div class="btn">Explore Now 🛰️</div></a>
+
+            </div>
+
+            <div class="celestial-items autoShow">
+                <img src="{{url_for('static',filename='moon.webp')}}" alt="moon pic">
+                <h4>The Moon</h4>
+                <a href="https://youtu.be/2iSZMv64wuU?si=ueiTXD4NlaeXUZrg" target="_blank"><div class="btn">Explore Now 🛰️</div></a>
+
+            </div>
+
+            <div class="celestial-items autoShow">
+                <img src="{{url_for('static',filename='blackhole.webp')}}"alt="blackhole pic">
+                <h4>The Blackhole</h4>
+                <a href="https://youtu.be/kOEDG3j1bjs?si=eRP4K6Y15sFj9hJb" target="_blank"><div class="btn">Explore Now 🛰️</div></a>
+
+            </div>
+
+            <div class="celestial-items autoShow">
+                <img src="{{url_for('static',filename='star.webp')}}" alt="star pic">
+                <h4>Stars</h4>
+                <a href="https://youtu.be/EFO_bsg1sw8?si=-7EmJa2W-PfonoMi" target="_blank"><div class="btn">Explore Now 🛰️</div></a>
+
+            </div>
+
+            <div class="celestial-items autoShow">
+                <img src="{{url_for('static',filename='wormholes.webp')}}" alt="wormhole pic">
+                <h4>The Wormhole</h4>
+                <a href="https://youtu.be/9P6rdqiybaw?si=yZvmpSa33qRjIEB1" target="_blank"><div class="btn">Explore Now 🛰️</div></a>
+
+            </div>
+
+
+            <div class="celestial-items autoShow">
+                <img src="{{url_for('static',filename='the crab nebula.webp')}}" alt="crab nebula pic">
+                <h4>The Crab Nebula</h4>
+                <a href="https://youtu.be/oJ9qJFQ0EE8?si=gFkOV9lualzBV3gk" target="_blank"><div class="btn">Explore Now 🛰️</div></a>
+
+            </div>
+
+             <div class="celestial-items autoShow">
+                <img src="{{url_for('static',filename='satellite.webp')}}" alt="satellite pic">
+                <h4>Satellite</h4>
+                <a href="https://youtu.be/ror4P1UAv_g?si=JPc5EvsdO6FwG_AE" target="_blank"><div class="btn">Explore Now 🛰️</div></a>
+            </div>
+
+             <div class="celestial-items autoShow">
+                <img src="{{url_for('static',filename='comet.webp')}}" alt="comet pic">
+                <h4>Comet</h4>
+                <a href="https://youtu.be/-oA44WL6P6k?si=MJAgv_b06s06YX_E" target="_blank"><div class="btn">Explore Now 🛰️</div></a>
+
+            </div>
+
+             <div class="celestial-items autoShow">
+                <img src="{{url_for('static',filename='galaxy.webp')}}" alt="galaxy pic">
+                <h4>Galaxy</h4>
+                <a href="https://youtu.be/zod6pkTPzI4?si=PqaHaPSjcuKOhnbc" target="_blank"><div class="btn">Explore Now 🛰️</div></a>
+
+            </div>
+
+
+             <div class="celestial-items autoShow">
+                <img src="{{url_for('static',filename='asteroid.webp')}}" alt="asteroid pic">
+                <h4>Asteroid</h4>
+                <a href="https://youtu.be/amhE6rN4OpU?si=Rh93NobizuHv2OG7" target="_blank"><div class="btn">Explore Now 🛰️</div></a>
+
+            </div>
+
+             <div class="celestial-items autoShow">
+                <img src="{{url_for('static',filename='supernova.webp')}}"  alt="supernova pic">
+                <h4>Supernova</h4>
+                <a href="https://youtu.be/dMfGKgUnAew?si=I7lYwPrUJZ9uHE8h" target="_blank"><div class="btn">Explore Now 🛰️</div></a>
+
+            </div>
+
+             <div class="celestial-items autoShow">
+                <img src="{{url_for('static',filename='pleiades.webp')}}" alt="pleides pic">
+                <h4>Pleiades </h4>
+                <a href="https://youtu.be/lIoRS8dS9dY?si=VmVKtkfF4zFtmLcV" target="_blank"><div class="btn">Explore Now 🛰️</div></a>
+
+            </div>
+
+             <div class="celestial-items autoShow">
+                <img src="{{url_for('static',filename='pulsar.webp')}}"alt="pulsar pic">
+                <h4>Pulsar </h4>
+                <a href="https://youtu.be/gjLk_72V9Bw?si=rHPyYGjTgAwl2ZCo" target="_blank"><div class="btn">Explore Now 🛰️</div></a>
+
+            </div>
+
+
+        </div>
+        
+        
+    </section>
+
+    <div class="line">
+  <marquee behavior="scroll" direction="right">
+    Space Spheres 🌌✨ Space Spheres 🚀🌟 Space Spheres 🪐💫 Space Spheres 🌠🛰️ 
+    Space Spheres 🌌🚀 Space Spheres 🌙⭐ Space Spheres ☄️🪐 Space Spheres 🌍🌟 
+    Space Spheres 🌑🚀 Space Spheres 🌌🛸
+  </marquee>
+</div>
+
+
+    <!-- Solar Section -->
+
+    <section id="solar-section">
+        <h2 class="autoShow show">🪐 Solar System</h2>
+        <div class="solar-container">
+
+             <div class="solar-items autoShow">
+                 <img width="340px" height="200px" src="{{url_for('static',filename='solarsystem.webp')}}" alt="solar system">
+                 <h4>The Solar System <i class="fa-solid fa-earth"></i></h4>
+                 
+            </div>
+           
+            <div class="solar-items autoShow">
+                  <img width="340px" height="200px" src="{{url_for('static',filename='200.gif')}}" alt="earth">
+                 <h4>The Earth <i class="fa-solid fa-earth"></i></h4>
+                 
+            </div>
+           
+            <div class="solar-items autoShow">
+                  <img width="340px" height="200px" src="{{url_for('static',filename='mercury.gif')}}" alt="mercury">
+                 <h4>The Mercury <i class="fa-solid fa-earth"></i></h4>
+                 
+            </div>
+
+            <div class="solar-items autoShow">
+                 <img width="340px" height="200px" src="{{url_for('static',filename='venus.gif')}}" alt="venus">
+                 <h4>The Venus <i class="fa-solid fa-earth"></i></h4>
+            </div>
+
+             <div class="solar-items autoShow">
+                 <img width="340px" height="200px" src="{{url_for('static',filename='mars.gif')}}" alt="mars">
+                 <h4>The Mars <i class="fa-solid fa-earth"></i></h4>
+            </div>
+           
+
+            <div class="solar-items autoShow">
+                <img width="340px" height="200px" src="{{url_for('static',filename='jupiter.gif')}}" alt="jupiter">
+                 <h4>The Jupiter <i class="fa-solid fa-earth"></i></h4>
+            </div>
+
+            <div class="solar-items autoShow">
+                 <img width="340px" height="200px" src="{{url_for('static',filename='uranus.gif')}}" alt="uranus">
+                 <h4>The Uranus <i class="fa-solid fa-earth"></i></h4>
+            </div>
+
+            <div class="solar-items autoShow">
+                 <img width="340px" height="200px" src="{{url_for('static',filename='neptune.gif')}}" alt="neptune">
+                 <h4>The Neptune <i class="fa-solid fa-earth"></i></h4>
+            </div>
+
+             <div class="solar-items autoShow">
+                 <img width="340px" height="200px" src="{{url_for('static',filename='saturn.gif')}}" alt="saturn">
+                 <h4>The Saturn <i class="fa-solid fa-earth"></i></h4>
+            </div>
+           
+            
+        </div>
+
+    </section>
+
+     <div class="line">
+  <marquee behavior="scroll" direction="right">
+    Space Spheres 🌌✨ Space Spheres 🚀🌟 Space Spheres 🪐💫 Space Spheres 🌠🛰️ 
+    Space Spheres 🌌🚀 Space Spheres 🌙⭐ Space Spheres ☄️🪐 Space Spheres 🌍🌟 
+    Space Spheres 🌑🚀 Space Spheres 🌌🛸
+  </marquee>
+</div>
+
+
+    <!-- Distance Section -->
+
+    <section id="distance-section">
+        <h2 class="autoShow show">📏 Distance</h2>
+        <div class="distance-container">
+            <div class="distance autoShow">
+                <img src="{{url_for('static',filename='moon2.webp')}}" alt="image">
+            <p>Fun fact: the Moon is about 384,400 km away from planet Earth.</p>
+  <i class='bxr  bx-moon'  style='color:#e8e1e1'></i></p>
+            </div>
+
+             <div class="distance autoShow">
+                <img src="{{url_for('static',filename='sun2.gif')}}" alt="image">
+            <p><p>Fun fact: the Sun is about 149.6 million km away from planet Earth.</p>
+</p>
+  <i class='bxr  bx-sun'  style='color:#e8e1e1'></i></p>
+            </div>
+
+             <div class="distance autoShow">
+                <img src="{{url_for('static',filename='mars.gif')}}" alt="image">
+            <p>Fun fact: Mars is about 225 million km away from planet Earth on average.</p>
+  <i class="fa-solid fa-earth"  style='color:#e8e1e1'></i></p>
+  
+            </div>
+
+             <div class="distance autoShow">
+                <img src="{{url_for('static',filename='jupiter.gif')}}" alt="image">
+            <p>Fun fact: Jupiter is roughly 628 million km away from planet Earth.</p>
+  <i class="fa-solid fa-earth" style='color:#e8e1e1'></i></p>
+            </div>
+
+            <div class="distance autoShow">
+                <img src="{{url_for('static',filename='centauri.gif')}}" alt="image">
+            <p>Fun fact: The nearest star, Proxima Centauri, is about 4.24 light-years from Earth.</p>
+  <i class='bxr  bx-star'  style='color:#e8e1e1'></i></p>
+            </div>
+
+            <div class="distance autoShow">
+                <img src="{{url_for('static',filename='andromeda.gif')}}" alt="image">
+            <p>Fun fact: The Andromeda Galaxy is approximately 2.5 million light-years away from planet Earth.</p>
+  <i class='fa-solid fa-earth'  style='color:#e8e1e1'></i></p>
+            </div>
+
+            
+            
+        </div>
+    </section>
+
+    <div class="line">
+  <marquee behavior="scroll" direction="right">
+    Space Spheres 🌌✨ Space Spheres 🚀🌟 Space Spheres 🪐💫 Space Spheres 🌠🛰️ 
+    Space Spheres 🌌🚀 Space Spheres 🌙⭐ Space Spheres ☄️🪐 Space Spheres 🌍🌟 
+    Space Spheres 🌑🚀 Space Spheres 🌌🛸
+  </marquee>
+</div>
+
+<!-- Contact Section -->
+    <section id="contact-section">
+        <h2 class="autoShow show">📡 Contact</h2>
+
+            <form class="autoShow"  method="post">
+
+                <!-- name  section -->
+
+            
+            <input type="text" id="name" name="username" placeholder="  Your Name" required><br><br>
+
+            <!-- email section -->
+
+            
+            <input type="text" id="name" name="email" placeholder="  Your Email" required><br><br>
+
+            <!-- password section -->
+
+            
+            <input type="password" id="password" name="password" placeholder="  Your Password" required><br><br>
+
+            <!-- address section -->
+             <input type="text" id="address" name="address" placeholder="  Your Address" required><br><br>
+
+             <!-- phone section -->
+
+             <input type="number" id="number" name="number" placeholder="  Your Phone Number" required><br><br>
+             <!--Submit Section  -->
+
+             <button type="submit" class="submit-btn">Submit</button>
+
+            
+            
+        </form>
+          
+    </section>
+
+<!-- The Map Section -->
+ <section id="map-section">
+ <h2 class="autoShow show">🗺️ Location Map</h2>
+
+<div class="container autoShow">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1837598.3552665105!2d84.48748511795694!3d25.900421441934643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39ed5844f0bb6903%3A0x57ad3fed1bbae325!2sBihar!5e0!3m2!1sen!2sin!4v1764148774786!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+</div>
+
+   </section> 
+
+    <!-- Footer Section -->
+
+    <footer>
+        <div class="col col-1">
+            <h3>About Us</h3>
+            <p>Made with ❤️🚀✨ by Shaif – Exploring cosmic wonders and bringing the magic of space to your screen.</p>
+
+
+        </div>
+        <div class="github">
+            <ul>
+                <li><i class="fa-brands fa-github"></i><a href="https://github.com/Shaif-Khan" target="_blank">Github</a></li>
+                
+            </ul>
+        </div>
+
+        <div class="linkedin">
+            <ul>
+                <li><i class="fa-brands fa-linkedin"></i><a href="https://linkedin.com/in/shaif-khan" target="_blank">LinkedIn</a></li>
+            </ul>
+        </div>
+
+        <div class="email">
+            <ul>
+                <li><i class="fa-solid fa-envelope"></i><a href="mailto:khanshaif2310@gmail.com" target="_blank">Email</a></li>
+            </ul>
+        </div>
+
+        <div class="website">
+            <ul>
+                <li><i class='bxr  bx-globe'></i> <a href="https://my-portfolio-website-jet-ten.vercel.app/" target="_blank">Website</a></li>
+            </ul>
+        </div>
+
+    </footer>
+
+    
+
+    <!-- Javascript Section -->
+
+    <script>
+        let menulink = document.getElementById("menulink")
+        let menubar = document.getElementById("menubar")
+
+        menulink.style.maxHeight = "0px"
+
+        menubar.addEventListener("click", () => {
+            if (menulink.style.maxHeight === "0px")
+            {
+                menulink.style.maxHeight = "400px"
+
+            }
+            else{
+                menulink.style.maxHeight = "0px"
+            }
+        })
+
+
+    </script>
+</body>
+</html>

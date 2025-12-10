@@ -1,0 +1,597 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family:cursive;
+}
+body{
+    background: linear-gradient(45deg,green,#000);
+    color:#fff;
+    font-weight: bold;
+       
+}
+
+.cosmic:hover{
+    color:greenyellow;
+
+}
+h1:hover{
+    color:yellow;
+}
+/* Navbar Section */
+
+a{
+    text-decoration: none;
+    color:#fff;
+    
+}
+li{
+    list-style: none;
+}
+
+/* Navbar */
+
+.navbar{
+    background: rgba(255, 255, 255, 0.15);
+    border:3px solid rgba(255,255,255,0.5);
+    justify-content: space-between;
+    border-radius: 1000px;
+    align-items: center;
+    padding:1rem 4rem;
+    display:flex;
+    height:80px;
+    position:sticky;
+    top:10px;
+    
+}
+.autoShow{
+    animation:autoShowAnimation both;
+    animation-timeline: view(10% 5%);
+}
+@keyframes autoShowAnimation{
+    from{
+        opacity:0;
+        transform:translateY(200px) scale(0.3);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0) scale(1);
+    }
+}
+
+
+.autoShow:hover{
+    
+    font-size:30px;
+    transition:0.5s;
+    
+
+}
+.show{
+    color: #89fc00;
+    
+
+}
+.navbar:hover{
+    box-shadow: 1px 0px 11.5px 7px greenyellow;
+    cursor:pointer;
+}
+
+.navbar ul{
+    display:flex;
+    gap: 40px;
+    align-items: center;
+}
+.navbar ul li a{
+    font-size:18px;
+}
+.navbar ul li a:hover{
+    font-size:30px;
+    transition:0.5s;
+    color:yellow;
+
+}
+
+
+.space{
+    text-align: center;
+}
+.space-sphere{
+    width:50px;
+    height:45px;
+}
+span{
+    font-size: 30px;
+    font-weight: bold;
+    
+}
+span:hover{
+    color:yellow;
+    cursor:pointer;
+    
+    
+}
+
+/* Hamburger-Menu Icon */
+
+.bx-menu{
+    font-size:30px;
+    cursor:pointer;
+}
+
+
+.menu-icon{
+    display: none;
+
+}
+
+/* Home Section */
+
+.home-section{
+    display:flex;
+    height:calc(100vh - 80px);
+    justify-content: space-between;
+    align-items: center;
+    padding:100px 4rem;
+
+}
+
+.home-section video{
+    z-index: -1;
+    position: absolute;
+    object-fit: cover;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+
+}
+
+.home-section.left{
+    width:50%;
+}
+.home-section h1{
+    font-size:4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-bottom: 40px;
+    
+}
+
+.home-section p{
+    font-size: 1.2em;
+    color:#fff;
+    font-weight: 600;
+    padding-block:20px;
+    
+}
+
+.home-section .left a{
+    font-weight: 600;
+    font-weight: bold;
+}
+.btn{
+    background-color:#000;
+    padding:12px 30px;
+    border: 3px solid;
+    display: inline-block;
+    transition:0.4s;
+    border-radius: 1000px;
+}
+.btn:hover{
+    background-color: green;
+    cursor:pointer;
+    font-size:30px;
+    transition:0.5s;
+    box-shadow: 1px 0px 11.5px 7px white;
+}
+ .home-section .image-section{
+    width:50%;
+}
+
+.line{
+    background:#000;
+    height:20px;
+    width:100%;
+    margin-top:100px;
+}
+marquee{
+    color:#fff;
+    font-size:15px;
+}
+
+/* Celestial Section */
+
+.left h1:hover{
+    cursor:pointer;
+}
+#celestial-section{
+    padding:100px 4rem;
+}
+
+#celestial-section h2{
+    text-align: center;
+    font-size:50px;
+}
+.celestial-container{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 40px 0;
+    gap:40px;  
+}
+.celestial-items{
+    width: 350px;
+    padding:20px;
+    border-radius:15px;  
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(1px);
+    border:1px solid rgba(255,255,255,0.5);
+    box-shadow: 0 6px 6px rgba(0,0,0,0.1);
+}
+
+.celestial-items:hover{
+    cursor:pointer;
+    box-shadow: 1px 0px 11.5px 7px greenyellow;
+    transition:0.4s;
+}
+
+.celestial-items img{
+    width:100%;
+    height:200px;
+    object-fit: cover;
+    border-radius:3px;
+    box-shadow: 1px 0px 11.5px 7px green;
+}
+
+.celestial-items h4{
+    padding-block: 15px;
+    color:#fff;
+}
+
+    
+
+/* Solar Section */
+
+#solar-section{
+    padding:100px 4rem;
+    
+
+}
+
+
+#solar-section h2{
+    font-size:50px;
+    text-align: center;
+}
+.solar-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:40px;
+    flex-wrap: wrap;
+    padding:60px 0;
+    
+    
+    
+}
+.solar-items{
+    width: 350px;
+    padding:20px;
+    height: 320px;
+    padding:5px;
+    overflow: hidden;
+    cursor:pointer;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(1px);
+    border:1px solid rgba(255,255,255,0.5);
+    box-shadow: 0 6px 6px rgba(0,0,0,0.1);
+
+}
+
+.solar-items h4{
+    text-align: center;
+    color:#fff;
+    margin-top:20px;
+    font-size:20px;
+}
+
+.solar-items video{
+    width:90%;
+    height:200px;
+    box-shadow: 1px 0px 11.5px 7px white;
+    margin:20px 14px;
+    border-radius: 5px;
+    
+}
+.solar-items:hover{
+    box-shadow: 1px 0px 22.5px 11px greenyellow;
+    transition: 0.4s;    
+}
+
+/* Distance Section */
+
+#distance-section{
+    padding:100px 4rem;
+}
+#distance-section h2{
+    font-size:50px;
+    text-align: center;
+}
+
+.distance-container{
+    gap:40px;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+    padding:60px 0;
+
+}
+
+.distance{
+    width:350px;
+    background: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(1px);
+    border:1px solid rgba(255,255,255,0.5);
+    box-shadow: 0 6px 6px rgba(0,0,0,0.1);
+    text-align: center;
+    color:#fff;
+    padding:20px;
+    border-radius: 10px;
+}
+
+.distance:hover{
+    cursor:pointer;
+    box-shadow: 1px 0px 11.5px 7px greenyellow;
+    transition: 0.4s;
+    
+}
+
+.distance img{
+    width:155px;
+    height:150px;
+    border-radius: 70%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 1px 0px 11.5px 7px greenyellow;
+}
+
+.distance p{
+    font-size:15px;
+    padding-top: 20px;
+}
+
+/* Contact Section */
+
+#contact-section{
+    padding:100px 4rem;
+}
+
+#contact-section h2{
+    font-size:50px;
+    text-align:center;
+}
+
+/* Contact Section */
+
+#contact-section{
+    display: block;
+    text-align: center;
+    padding:100px 4rem;
+    
+}
+
+form{
+    margin-top:30px;
+    padding-block:50px;
+    border-radius:10px;
+    font-size:15px; 
+    border-radius: 10px;
+    background: rgba(255, 255, 255, -0.85);
+    backdrop-filter: blur(1px);
+    border:1px solid rgba(255,255,255,0.5);
+    box-shadow: 0 6px 6px rgba(0,0,0,0.1); 
+}
+form:hover{
+    cursor:pointer;
+    box-shadow: 1px 0px 22.5px 11px greenyellow;
+    transition: 0.4s;    
+
+}
+
+
+
+form input{
+    height:30px;
+    width:50%;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    box-shadow: 1px 0px 9px 2px white;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, -0.85);
+    backdrop-filter: blur(1px);
+    border:1px solid rgba(255,255,255,0.5);
+    box-shadow: 0 6px 6px rgba(0,0,0,0.5);
+    
+}
+
+ .submit-btn {
+    background: rgba(255, 255, 255, -0.85);
+    backdrop-filter: blur(1px);
+    border:1px solid rgba(255,255,255,0.5);
+    box-shadow: 0 6px 6px rgba(0,0,0,0.5);
+    border-radius: 25px;        
+    font-size: 16px;            
+    cursor: pointer;            
+    transition: all 0.3s ease;
+    padding: 12px 25px;
+    }
+
+ .submit-btn:hover {
+        box-shadow: 1px 0px 22.5px 11px greenyellow;
+        transform: scale(1.05);     
+        
+    }
+
+    .submit-btn:active {
+        transform: scale(0.97);     
+    }
+
+
+/* The Map Section */
+
+#map-section h2{
+    
+    display: block;
+    font-size: 50px;
+    text-align: center;
+    
+    
+}
+
+.container{
+    width: 100%;
+    height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+
+}
+iframe{
+    transition:0.3s ease-in-out;
+    width:80%;
+    height:500px;
+    border-radius: 20px;
+    box-shadow: 1px 0px 22.5px 11px whitesmoke;
+    
+}
+
+iframe:hover{
+    cursor:pointer;
+    box-shadow: 1px 0px 22.5px 11px greenyellow;
+    transition: 0.4s; 
+    transform:scale(1.1);   
+
+}
+/* Footer Section */
+
+footer{
+    border-radius: 10px;
+    background: rgba(255, 255, 255, -0.85);
+    backdrop-filter: blur(1px);
+    border:1px solid rgba(255,255,255,0.5);
+    box-shadow: 0 6px 6px rgba(0,0,0,0.1);
+    padding:40px 4rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+
+}
+.col h3{
+    font-weight: 700;
+
+}
+
+.col p{
+    font-size:15px;
+    padding-block:20px;
+}
+
+.col-1{
+    width:300px;
+    height:100px;
+    
+}
+footer:hover{
+    cursor:pointer;
+    box-shadow: 1px 0px 22.5px 11px greenyellow;
+    transition: 0.4s;   
+}
+
+.github,.linkedin,.email,.website{
+    color:white;
+    font-weight:bold;
+    font-size:30px;
+    cursor:pointer;
+    padding-top:30px;
+}
+
+
+
+
+
+
+
+/* Media Query For Responsiveness  */
+
+@media(max-width:800px){
+    .navbar ul{
+        position:absolute;
+        top:80px;
+        right:0;
+        background: #000;
+        flex-direction: column;
+        overflow: hidden;
+        transition: max-height 0.5s;
+
+    }
+    .navbar ul li:last-child{
+        padding-bottom:40px;
+    }
+    .menu-icon{
+        display: block;
+    }
+    .home-section{
+        flex-direction: column;
+        height:auto;
+        padding-top:40px;
+        padding-bottom:0;
+    }
+    #hero-section,#celestial-section,#solar-section,#distance-section{
+        padding:40px 2rem;
+    }
+
+    
+.navbar{
+    padding:1rem 2rem;
+}
+}
+
+@media(max-width:500px){
+    footer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding:40px 0;
+    }
+    
+}
+
+/* Customize Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb{
+    background:linear-gradient(#89fc00,red);
+    border-radius:10px;
+    scrollbar-width: thin;
+    
+}
