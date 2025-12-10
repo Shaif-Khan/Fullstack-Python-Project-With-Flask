@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    font-family:cursive;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 body{
     background: linear-gradient(45deg,green,#000);
@@ -594,4 +594,5 @@ footer:hover{
     border-radius:10px;
     scrollbar-width: thin;
     
+
 }
